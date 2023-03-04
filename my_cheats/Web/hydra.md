@@ -8,7 +8,7 @@ This tool will bruteforce http form login and will check the response for the ke
 detection_mode: [S|F], S for success (if the keyword is found in the response then it is a hit), F for failure (if the keyword is NOT found in the response then it is a hit) 
 
 ```
-hydra -L <usernames_file>  -P <passwords_file> <target> http-post-form  "<login_path>:username=^LOGIN^&password=^PASS^:<detection_mode>=<keyword>"
+hydra -L <usernames_file>  -P <passwords_file> <target> http-post-form  "<login_path>:username=^USER^&password=^PASS^:<detection_mode>=<keyword>"
 ```
 ## hydra - https - form - userlist and password list
 
@@ -17,5 +17,5 @@ This tool will bruteforce https form login and will check the response for the k
 detection_mode: [S|F], S for success (if the keyword is found in the response then it is a hit), F for failure (if the keyword is NOT found in the response then it is a hit) 
 
 ```
-hydra -L <usernames_file>  -P <passwords_file> <target> https-post-form  "<login_path>:username=^LOGIN^&password=^PASS^:<detection_mode>=<keyword>"
+hydra -L <usernames_file>  -P <passwords_file> <target> https-post-form  "<login_path>:username=^USER^&password=^PASS^:<detection_mode>=<keyword>"
 ```
